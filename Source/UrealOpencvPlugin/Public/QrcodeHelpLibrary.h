@@ -13,5 +13,9 @@ UCLASS()
 class UREALOPENCVPLUGIN_API UQrcodeHelpLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
+
+public:
+	UFUNCTION(BlueprintCallable)
+		static FString DecodeQrcode(FString InImagePath);
 	
 };
